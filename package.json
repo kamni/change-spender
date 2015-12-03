@@ -1,0 +1,16 @@
+{
+  "name": "change-spender",
+  "version": "0.0.0",
+  "description": "Get rid of loose change by making small purchases.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamni/change-spender.git"
+  },
+  "author": "jleadbet@gmail.com",
+  "license": "Affero GPL v3",
+  "homepage": "https://github.com/kamni/change-spender",
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  }
+}

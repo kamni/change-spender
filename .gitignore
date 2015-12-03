@@ -1,34 +1,41 @@
-.DS_Store
+# Compiled source #
+###################
 *.pyc
-*.pyo
 *.egg-info
-ve
-pip-log.txt
-*~
-*#
-.#*
-*.sw[op]
-.ropeproject
-docs/build
-.idea/
-*.db
-*.sqlite3
+.sass-cache/**
+
+# Editor-specific project files #
+#################################
 .project
 .pydevproject
-.settings/
-.cache/
-.pip-download-cache/
-storyville/conf/local_releases.py
-.coverage
-nosetests.xml
-*.orig
-coverage.xml
-pylint.properties
-pylint.txt
-pylintrcs
-solr/solr/*/data
-solr/cmg-virtualbox_DEFAULT_*
-storyville/conf/mysettings.py
+src/**
 
-# Ignore generated content
-/apache/vhosts.d/*
+
+# Logs, DBs, and settings #
+###########################
+*.sqlite3
+*.db
+*.log
+dev_settings.py
+srv_settings.py
+
+
+# Test files #
+##############
+.coverage
+
+# OS specific files #
+#####################
+.DS_Store
+Thumbs.db
+
+# Third-party files #
+#####################
+**/whoosh_index
+
+
+# Project-specific files #
+##########################
+uploads/**
+static/**
+node_modules/**
