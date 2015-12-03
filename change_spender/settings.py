@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # change_spender apps
+    'calculator',
 ]
 
 MIDDLEWARE_CLASSES = [
