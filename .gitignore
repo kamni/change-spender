@@ -32,10 +32,10 @@ Thumbs.db
 # Third-party files #
 #####################
 **/whoosh_index
-
+node_modules/**
+webpack-stats.json
 
 # Project-specific files #
 ##########################
 uploads/**
 static/**
-node_modules/**

@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # third-party apps
+    'webpack_loader',
+
     # change_spender apps
     'calculator',
 ]
@@ -128,9 +131,19 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'npm.finders.NpmFinder'
+    'change_spender.finders.StaticFinder',
+    'npm.finders.NpmFinder',
 ]
 
-# django-npm configuration
+############################# Third-Party Config ##############################
+
+# django-npm
 NPM_PREFIX_PATH = BASE_DIR
 NPM_DESTINATION_PREFIX = 'js/lib'
+
+# django-webpack-loader
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': 'bundles/' # end with slash
+    }
+}

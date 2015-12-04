@@ -19,6 +19,7 @@ from django.contrib import admin
 
 from calculator.views import MainView
 
+
 urlpatterns = [
     url(r'^$', MainView.as_view(), name='main'),
     url(r'^admin/', admin.site.urls),
